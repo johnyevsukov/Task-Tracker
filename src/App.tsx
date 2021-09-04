@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import TaskForm from './components/TaskForm';
 import TaskList from './components/TaskList';
@@ -22,7 +21,7 @@ function App() {
       setTasks(JSON.parse(list))
     }
     localStorage.setItem('tasks', JSON.stringify(tasks))
-  }, [])
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     localStorage.setItem('tasks', JSON.stringify(tasks))

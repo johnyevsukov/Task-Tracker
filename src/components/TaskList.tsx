@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import TaskItem from './TaskItem'
 import { IState as Props } from '../App'
 import styled from 'styled-components'
